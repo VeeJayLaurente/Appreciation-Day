@@ -1,0 +1,60 @@
+.end-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff0f5;
+  color: #ff4f79;
+  font-family: 'Comic Sans MS', cursive;
+
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.end-message h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Tooltip styles */
+.had-tooltip {
+  position: relative;
+  cursor: pointer;
+  color: #ff2f6b;
+  font-weight: bold;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 190px;
+  background-color: #ff6f91;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.had-tooltip:hover .tooltip-text,
+.had-tooltip:active .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

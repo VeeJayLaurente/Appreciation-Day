@@ -1,0 +1,31 @@
+.maze-container {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #ffe4ec;
+  border: 1px solid #fbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wall {
+  background-color: #ff8fab;
+}
+
+.exit {
+  background-color: #4CAF50;
+  box-shadow: 0 0 6px 2px rgba(76, 175, 80, 0.5);
+}
+
+.player {
+  width: 80%;
+  height: auto;
+}
