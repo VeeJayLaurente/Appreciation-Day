@@ -1,4 +1,4 @@
-import Maze from "../../appreciation-maze/components/Maze.jsx";
+import Maze from "../components/Maze.jsx";
 
 const App = () => {
   return (
