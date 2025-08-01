@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center", color: "#ff4081" }}>
-        A Mini-Game for Cludy
+        A Mini-Game for Ate Erika
       </h1>
       <Maze />
     </div>
